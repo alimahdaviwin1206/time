@@ -1,0 +1,274 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face{font-family:'dillen';
+    src:url('fonts/Dillen.ttf') format('truetype'),
+}
+body{
+    font-family: Dillen;
+    background-color: #cbdcff;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+.head{
+    display: flex;    
+    background-color: #164bb6;
+    padding-top: 20px;
+    padding-bottom: 20px;    
+    width: 100%;
+
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+}
+
+.nothing{
+    width: 50px;
+    height: 50px;
+}
+
+.b-heed{
+    color: #ffffff;
+    display: flex;
+    margin-right: auto;
+    margin-left: 5%;    
+}
+
+.b-heed p{
+    line-height: 20px;
+    margin-right: 20px;
+}
+
+.head h2{
+    color: #d4e3ff;
+    line-height: 20px;
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+.top-box-one{
+    background-color: #164bb6;    
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.box-main{
+    display: flex;
+}
+
+.next-part{
+    text-align: right;
+    font-size: 20px;
+    margin: 10px 3% 10px 10px;    
+}
+
+.note{
+    text-align: right;    
+    height: 100%; 
+    background-image:linear-gradient(to top,#195adc,#143e93);     
+    padding: 3%;
+    border-radius: 10px;
+}
+.titel-note{
+    font-size: 20px;
+    line-height: 25px;
+    color: #edf9ff;    
+}
+.txt-note{
+    margin-top: 5px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+    overflow-wrap: break-word;
+}
+.time-note{
+    box-shadow: #1212127c 0px 0px 10px 0px; 
+    border-radius: 10px;
+    background-color: #111111;
+    margin-top: 2%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 95%;    
+}
+
+.note-time-txt{
+    text-align: right;
+    color: #ffffff;
+    font-size: 10px;
+    line-height: 15px;
+    padding: 5px 20px 5px 0px;
+}
+
+
+
+
+/*دکستاپ*/
+@media (min-width: 758px){
+    .box-main-all{
+        margin-right: 2%;    
+        margin-left:  2%;
+        display: flex;
+    }
+    .calendar{
+        box-shadow: #1212127c 0px 0px 10px 0px; 
+        border-radius: 10px;
+        background-color: #111111;
+        margin: 10px;
+        width: 50%;    
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .all-note{
+        box-shadow: #1212127c 0px 0px 10px 0px; 
+        border-radius: 10px;
+        background-color: #2f2f2f;
+        margin: 10px;
+        width: 50%; 
+        padding-top: 1%;
+        height: 250px;
+        overflow-y: auto;    
+    }
+    .top-box-one img{
+        width: 20%;
+        box-shadow: #1212127c 0px 0px 10px 0px;    
+    }
+    .txt-box-top-one p{
+        color: #d5d5d5;
+        line-height: 3vw;
+        font-size: 2vw;
+    }
+    .txt-box-top-one h1{
+        color: #ffffff;   
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+    .txt-box-top-one{
+        height: auto;
+        margin-top: 6%;
+        margin-left: auto;
+        text-align: right;    
+    }
+    .b-nothing{
+        width: 0px;
+        height: 0px;
+    }
+    .line-center{
+        width: 10px;
+        height: 10px;
+    }
+}
+/*موبایل*/
+@media (max-width: 767px
+){
+    .box-main-all{
+        margin-right: 2%;    
+        margin-left:  2%;
+    }
+    .calendar{
+        box-shadow: #1212127c 0px 0px 10px 0px; 
+        border-radius: 10px;
+        background-color: #111111;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;    
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .all-note{
+        box-shadow: #1212127c 0px 0px 10px 0px; 
+        border-radius: 10px;
+        background-color: #2f2f2f;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%; 
+        padding-top: 1%;
+        height: 300px;
+        overflow-y: auto;    
+    }
+    .top-box-one img{
+        width: 40%;
+        box-shadow: #1212127c 0px 0px 10px 0px;    
+    }
+    .txt-box-top-one p{
+        color: #d5d5d5;
+        line-height: 4vw;
+        font-size: 3vw;
+    }
+    .txt-box-top-one h1{
+        color: #ffffff;   
+        font-size: 6vw;
+        line-height: 7vw;
+    }
+    .txt-box-top-one{
+        height: auto;
+        margin-top: 11%;
+        margin-left: auto;
+        text-align: right;    
+    }
+
+    .b-nothing{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+.calendar-titel{
+    display: flex;
+    border-radius: 10px 10px 0px 0px;
+    margin-left: auto;
+    background-color: #143e93;
+    width: auto;
+}
+
+.calendar-titel p{
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 10px;
+}
+
+.day{
+    color: #ffffff;
+    text-align: center;
+    background-color: #2a2a2a;
+    border-radius: 100px;
+    width: 15%;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+}
+
+.all-day{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+
+
+.day:hover{
+    transition: all 0.3s ease-in-out;
+    background-color: #164bb6;
+}

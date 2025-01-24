@@ -1,0 +1,422 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face{font-family:'dillen';
+    src:url('fonts/Dillen.ttf') format('truetype'),
+}
+body{
+    font-family: Dillen;
+    background-color: #cbdcff;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+.head{
+    display: flex;    
+    background-color: #cbdcff;
+    padding-top: 20px;
+    padding-bottom: 20px;    
+    width: 100%;
+
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+}
+
+.nothing{
+    width: 80px;
+    height: 80px;
+}
+
+.b-heed{
+    color: #111111;
+    display: flex;
+    margin-right: auto;
+    margin-left: 5%;    
+}
+
+.b-heed p{
+    line-height: 20px;
+    margin-right: 20px;
+}
+
+.head h2{
+    color: #164bb6;
+    line-height: 20px;
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+
+.day{
+    color: #ffffff;
+    text-align: center;
+    background-color: #2a2a2a;
+    border-radius: 100px;
+    width: 15%;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+}
+/*توی اولویت اول باشه*/
+.day-priority-one{
+    color: #111111;
+    text-align: center;
+    background-color: #80ff79;
+    border-radius: 100px;
+    width: 15%;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;    
+}
+/*توی اولویت دوم باشه*/
+.day-priority-two{
+    color: #111111;
+    text-align: center;
+    background-color: #ffe979;
+    border-radius: 100px;
+    width: 15%;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;    
+}
+/*توی اولویت سوم باشه*/
+.day-priority-three{
+    color: #111111;
+    text-align: center;
+    background-color: #ff7979;
+    border-radius: 100px;
+    width: 15%;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;    
+}
+
+
+
+.day:hover{
+    transition: all 0.3s ease-in-out;
+    filter: brightness(2);
+}
+.day-priority-one:hover{
+    transition: all 0.3s ease-in-out;
+    filter: brightness(2);
+}
+.day-priority-two:hover{
+    transition: all 0.3s ease-in-out;
+    filter: brightness(2);
+}
+
+.day-priority-three:hover{
+    transition: all 0.3s ease-in-out;
+    filter: brightness(2);
+}
+
+
+
+
+.all-day{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+.calendar-titel{
+    display: flex;
+    border-radius: 10px 10px 0px 0px;
+    margin-left: auto;
+    background-color: #143e93;
+    width: auto;
+}
+
+.calendar-titel p{
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 10px;
+}
+
+
+.box-main{
+    display: flex;
+}
+
+
+/*دکستاپ*/
+@media (min-width: 758px){
+    .box-main-all{
+        margin-right: 2%;    
+        margin-left:  2%;
+        display: flex;
+    }
+    .calendar{
+        box-shadow: #1212127c 0px 0px 10px 0px; 
+        border-radius: 10px;
+        background-color: #111111;
+        margin: 10px;
+        width: 50%;    
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .edit-box{
+        box-shadow: #1212127c 0px 0px 10px 0px; 
+        border-radius: 10px;
+        background-color: #2f2f2f;
+        margin: 10px;
+        width: 50%; 
+        height: auto;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .b-nothing{
+        width: 0px;
+        height: 0px;
+    }
+    .line-center{
+        width: 10px;
+        height: 10px;
+    }
+}
+/*موبایل*/
+@media (max-width: 767px
+){
+    .box-main-all{
+        margin-right: 2%;    
+        margin-left:  2%;
+    }
+    .calendar{
+        box-shadow: #1212127c 0px 0px 10px 0px; 
+        border-radius: 10px;
+        background-color: #111111;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;    
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .edit-box{
+        box-shadow: #1212127c 0px 0px 10px 0px; 
+        border-radius: 10px;
+        background-color: #2f2f2f;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%; 
+        height: auto;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .b-nothing{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+.calendar-titel{
+    display: flex;
+    border-radius: 10px 10px 0px 0px;
+    margin-left: auto;
+    background-color: #143e93;
+    width: auto;
+}
+
+.calendar-titel p{
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 10px;
+}
+
+.day{
+    color: #ffffff;
+    text-align: center;
+    background-color: #2a2a2a;
+    border-radius: 100px;
+    width: 15%;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+}
+
+.all-day{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+.edit-titel{
+    display: flex;
+    border-radius: 10px 10px 0px 0px;
+    margin-left: auto;
+    background-color: #111111;
+    width: auto;
+}
+
+.edit-titel p{
+    margin-left: auto;
+    margin-right: auto;
+    color: #cbdcff;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 10px;
+}
+
+.set-time{
+    display: flex;
+}
+
+.input-time{
+    color: #ffffff;
+    width: 40%;
+    text-align: right;
+    background-color: #111111;
+    margin: 10px 0px 10px 0px;
+    border-radius: 10px;
+    height: 50px;
+    box-shadow: #00000055 0px 3px 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-time input{
+    width: 90%;
+    border-width: 0px;
+    border-style: solid;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #111111;
+    text-align: right;
+    color: #ffffff;
+    font-family: Dillen;
+    padding-right: 10px;
+}
+
+.all-time-save select{
+    text-align: center;
+    width: 90%;
+    background-color: #111111;
+    color: #ffffff;
+    font-family: Dillen;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+
+.input{
+    color: #ffffff;
+    width: 90%;
+    text-align: right;
+    background-color: #111111;
+    margin: 10px 0px 10px 0px;
+    border-radius: 10px;
+    height: 50px;
+    box-shadow: #00000055 0px 3px 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.input input{
+    width: 90%;
+    border-width: 0px;
+    border-style: solid;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #111111;
+    text-align: right;
+    color: #ffffff;
+    font-family: Dillen;
+    padding-right: 10px;
+
+}
+
+.ok-note {
+    display: flex;
+}
+.save-note{
+    color: #111111;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #cbdcff;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: #00000055 0px 3px 5px;
+}
+/*باکس حذف*/
+.delet-note{
+    color: #ffffff;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #ff4747;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: #00000055 0px 3px 5px;
+}
+
+.priority{
+    color: #ffffff;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-image:linear-gradient(to top,#19dc30,#14931f); 
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: #00000055 0px 3px 5px;    
+}
+
+.box-data-day{
+    width: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 1%;
+    background-color: #b9c8e7;
+    border-radius: 10px;
+    box-shadow: #1212123a 0px 1px 5px 0px; 
+}
+
+.box-data-day p{
+    color: #143e93;
+    text-shadow: #00000055 0px 3px 5px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 30px;
+}
